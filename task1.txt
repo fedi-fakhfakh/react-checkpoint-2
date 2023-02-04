@@ -1,0 +1,18 @@
+PROCEDURE dot_product(v1 : ARRAY_OF FLOAT,v2 : ARRAY_OF FLOAT)
+VAR
+    VAR product :FLOAT;
+BEGIN
+    FOR i FROM 0 TO 2 STEP 1  DO
+        product := product + v1[i]*v2[i];
+    END_FOR
+END
+ALGORITHM algorithm_name
+VAR
+    set_declarations
+BEGIN
+    IF (product = 0) THEN
+        Write("the two vectors are orthogonal")
+    ELSE
+        Write("the vectors are not orthogonal")
+    END_IF
+END
